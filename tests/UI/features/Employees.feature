@@ -4,7 +4,7 @@ Feature: Download Employee Tab
 
   @412 @UI-Regression
   Scenario: Download Employee Tab Report
-    Given I navigate to Wambi ApplicatIion
+    Given I navigate to Wambi Application
     And I click on Team Member Login
     And I enter username and password and click Login
     When I click on Employees Tab Solution

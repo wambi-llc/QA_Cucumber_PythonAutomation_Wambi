@@ -12,7 +12,7 @@ use_step_matcher("re")
 
 driver.clear_cookies()
 
-@given("I navigate to Wambi ApplicatIion")
+@given("I navigate to Wambi Application")
 def step_impl(context):
 
     driver.navigate(sconfig.testurl)
