@@ -25,7 +25,31 @@ Utilities
  
 
 
+#Github Installation
 
+Request Github WRITE access
+
+Download github desktop and login to your account. 
+ Select the QA_Cucumber_PythonAutomation_Wambi
+ Create a separate project folder and clone project into that folder. Make sure Local path is defined as
+  path where you want the project cloned
+  
+#PULL REQUEST Strategy
+
+TESTER: 
+
+Create a branch from master
+Clone it into your local
+Add new/update code to this branch
+After testing in local is successful, push changes from local back to remote branch
+Create a Pull Request to  merge remote branch to Master and ask for 1 reviewer to review and approve. 
+Once Approved by another QA, merge to master. 
+
+REVIEWER: 
+
+When reviewing, pull branch with changes into local and test the scenarios that were updated and all possibly effected
+scenarios to validate script works and hasn't impacted any other code negatively. 
+After reviewed and changes approved. Approve the PR and notify PR creator
 
 
 #Installation
