@@ -1,0 +1,10 @@
+dataTab = "//a[(text()='Data')]"
+DetRevHistory = "//a[span='DETAILED REVIEW HISTORY']"
+searchText = "//input[@name='key']"
+search = "//button[@type='submit']"
+searchTable = "//html/body/div[2]/div/div/div/div/form/div[4]/div[2]"
+searchList = "//a[contains(text(), 'Alessandra Smith ')]"
+searchNoresults = "//td[contains(text(),'No data available in table')]"
+showdropdown = "//select[@id='show']"
+searchResultText = "//div[contains(text),'Showing 1 to 51 of 51 entries']"
+

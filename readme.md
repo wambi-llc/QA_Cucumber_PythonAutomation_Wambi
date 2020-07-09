@@ -97,3 +97,29 @@ requirements.txt 'pip install -r requirements.txt'
 
 #Report Generation
 Will update this sections once Allure report generation has been implemented.  
+https://stepupautomation.wordpress.com/2019/03/25/allure-report-for-behave-framework/
+https://docs.qameta.io/allure/
+
+For Mac: 
+brew install allure
+or 
+pip3 install allure-behave
+
+For Windows: 
+To install Allure, download and install Scoop and then execute in the Powershell:
+scoop install allure
+
+
+1) behave -f allure_behave.formatter:AllureFormatter -o allure/results ./tests/UI/features/Employees.feature
+2) allure serve allure/results
+3) allure report clean
+
+TO run without genreating allure report
+run `behave -f plain --no-capture tests/UI/features/Employees.feature` to print logs from print statements.
+
+run `behave -f plain --no-capture --tags=@<tagName> tests/UI/features/Employees.feature` to print logs and run specific test by providing tag.
+
+
+
+ignore---allure generate allure/results/ -o allure/reports
+
