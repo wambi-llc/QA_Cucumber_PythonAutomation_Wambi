@@ -12,4 +12,4 @@ def step_impl(context):
         print('attribute for autocomplete set to', frmattribute)
         assert frmattribute == "off", "Username and Password Form not set to automcomplete as off"
 
-        driver.closeBrowser()
+        #driver.closeBrowser()

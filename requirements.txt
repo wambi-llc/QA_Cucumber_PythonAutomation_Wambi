@@ -13,3 +13,4 @@ newpy~=1.1.16
 pytest>=3.5.1
 allure-pytest==2.8.16
 allure-python-commons>=2.5.0
+pyspellchecker==0.5.5

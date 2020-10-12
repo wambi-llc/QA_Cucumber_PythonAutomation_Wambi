@@ -29,7 +29,7 @@ def test_step_impl(context):
 @step("I click on Team Member Login")
 
 def step_impl(context):
-
+    time.sleep(2)
     driver.waitOnElement(teamMemberLoginButton)
     driver.elementClick(teamMemberLoginButton)
 
@@ -100,9 +100,10 @@ def step_impl(context):
 
 @step("I select a random facility, random clinic/department, and a random discipline")
 def step_impl(context):
-    time.sleep(70)
+    time.sleep(20)
     facilities = driver.getSelectedElements(selectFacilities)
-    facilitiesoption = len(facilities.options) - 1
+    facilitiesoption = len(facilities.options)-1
+    print(facilitiesoption)
     #facilities.select_by_index(1)
     facilities.select_by_index(random.randint(1,facilitiesoption))
     time.sleep(20)
@@ -121,7 +122,7 @@ def step_impl(context):
 @step("I generate a random number between 3 and 50 digits for the Employee ID")
 def step_impl(context):
     driver.pressTab()
-    driver.waitOnElement(employeeId)
+    #driver.waitOnElement(employeeId)
     global empId
     empId = random.randint(100,100000000)
     driver.enterValues(employeeId,empId)
@@ -165,6 +166,7 @@ def step_impl(context):
 @then("I validate that the new employee does show up in search results")
 def step_impl(context):
      time.sleep(10)
+     driver.pressEnter()
      validateEmpid = driver.getTextForElement(checkEmployee)
      assert int(validateEmpid) == empId, "New record is not created"
 

@@ -35,7 +35,7 @@ def step_impl(context):
 
 @then("I validate all the returned results are only for the careprovider that was searched")
 def step_impl(context):
-
+       time.sleep(2)
        searchData = driver.getTextForElement(searchList)
        ResultList = driver.getElements(searchList)
        for i in range(len(ResultList)):
@@ -44,6 +44,7 @@ def step_impl(context):
 
 @step("I enter a careprovider's name that doesn't exist\{asfdlkjvixlkcjv\} and click search")
 def step_impl(context):
+   time.sleep(2)
    driver.enterValues(searchText,'\{asdflkjvixlckjv\}')
    driver.elementClick(search)
 

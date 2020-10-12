@@ -11,3 +11,12 @@ Feature: Awards Tab
     And I Zoom In to Screen to max Zoom In allowed
     Then I validate the Date sub tab is showing all the text
     Then I validate the Action sub tab is showing all the text
+
+
+    # @WP-575
+    #Scenario: Add Spell Check on Peer Recognition
+     # Given I navigate to Wambi Application
+      #And I click on Team Member Login
+      #And I enter username and password and click Login to login as SA User
+      #Then I click on My Page Tab
+      #And I click on Send Peer CarePost Card

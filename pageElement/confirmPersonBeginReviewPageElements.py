@@ -1,0 +1,7 @@
+selectPerson = "//span[contains(text(),'Brittany J')]"
+checkModalbox = "//div[@class='EmployeeTile__ProfileContainer-sc-1fp5azx-0 bqlAeO']"
+rating1 = "//span[contains(text(),'Poor')]"
+searchPerson = "//input[@placeholder='Search by name']"
+unitList = "//li[contains(text(),'ALC Pharmacy')]"
+chkstep = "//p[@class='ProgressBar__ProgressText-m312fs-1 dIzRcy']"
+selectUnit_Dept ="//li[@class='Dropdown__StyledOption-sc-1xl7l7e-3 fTnZGf']"
