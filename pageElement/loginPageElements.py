@@ -1,4 +1,4 @@
-teamMemberLoginButton = "//a[contains(text(), 'Team Member Login')]"
+teamMemberLoginButton = "//button[@class = 'Button__StyledButton-xy5qsc-0 irqcOb']"
 
 #LoginPage
 

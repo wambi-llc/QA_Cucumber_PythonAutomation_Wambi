@@ -51,12 +51,12 @@ Feature: Home Tab
     Then I click on Home Tab
     Then I validate Select location has a drop down present
 
-  Scenario: Validate the text for Location in the top bar reads "Select Location"
-   Given I navigate to Wambi Application
-    And I click on Team Member Login
-    And I enter username and password and click Login to login as SA User
-    Then I click on Home Tab
-    Then I validate select location text on the top bar is "Select Location"
+  #Scenario: Validate the text for Location in the top bar reads "Select Location"
+  # Given I navigate to Wambi Application
+    #And I click on Team Member Login
+    #And I enter username and password and click Login to login as SA User
+    #Then I click on Home Tab
+    #Then I validate select location text on the top bar is "Select Location"
 
   Scenario: Validate menu bar includes all tabs: Home, My Page, Awards, Trending, Employees, Patients, Ambassadors, Data, Comments, Perks, Reviews
    Given I navigate to Wambi Application

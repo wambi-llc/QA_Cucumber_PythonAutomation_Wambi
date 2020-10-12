@@ -1,5 +1,6 @@
 from behave import *
 from pageElement.awardsElements import *
+from pageElement.myPageElements import *
 from utilities.driverUtil import driver
 import utilities.config as sconfig
 import datetime

@@ -29,8 +29,8 @@ def step_impl(context):
     #driver.waitOnElement(lineIcon)
     #driver.elementClick(lineIcon)
     time.sleep(10)
-    driver.waitOnElement(HomePage)
-    driver.elementClick(HomePage)
+    #driver.waitOnElement(HomePage)
+    #driver.elementClick(HomePage)
 
 
 
@@ -195,7 +195,7 @@ def step_impl(context):
 def step_impl(context):
     time.sleep(10)
     assert driver.getTextForElement(Awards) == 'Awards', "Awards tab is not included in Home page Menu bar"
-    assert driver.getTextForElement(HomePage) == "Home", "Home tab is not included in Home Page Menu bar"
+    #assert driver.getTextForElement(HomePage) == "Home", "Home tab is not included in Home Page Menu bar"
     assert driver.getTextForElement(MyPage) == 'My Page',  "My Page tab is not included in Home Page Menu bar"
     assert driver.getTextForElement(Trending) == 'Trending', "Trending tab is not included in Home Page Menu "
     assert driver.getTextForElement(Employees) == 'Employees', "Employees tab is not included in Home Page Menu "
