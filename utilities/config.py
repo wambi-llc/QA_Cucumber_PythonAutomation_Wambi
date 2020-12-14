@@ -1,5 +1,3 @@
-testurl = 'https://www.testingwambi.com'
-samlurl = "samlwambi.com"
-usrname = "W00047SE"
-pword = "AceWambi01"
+careurl = 'https://stage.carepostcard.com/'
 
+# https://stage.carepostcard.com/ 'https://dev.carepostcard.com'

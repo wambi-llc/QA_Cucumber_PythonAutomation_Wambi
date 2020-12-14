@@ -65,10 +65,11 @@ class Driver(object):
     def waitFor(self, timeInSec):
         self.driver.implicitly_wait(timeInSec)
 
-
-
     def elementClick(self, elemXpath):
         return self.driver.find_element_by_xpath(elemXpath).click()
+
+    def selectListItem(self, elemXpath, optionText):
+        return self.driver.find_element_by_xpath(elemXpath).first.click()
 
     def clearElement(self, elemXpath):
         return self.driver.find_element_by_xpath(elemXpath).clear()

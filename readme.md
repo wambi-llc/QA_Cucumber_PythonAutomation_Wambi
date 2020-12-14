@@ -16,7 +16,7 @@ Step Definition Files:
 PageElements Folder: 
  Page Elements files will include all the xpaths for all the available elements under each tab. 
  Here we are simply setting the xpaths equal to a variable that we can call in step files as needed. 
- 
+ p
 Utilities
  Config.py file will include testing urls, username, passwords and any other config information needed 
  driverUtil.py: driver and common methods are written in this file. We can create wrappers around basic
