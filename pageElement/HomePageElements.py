@@ -1,0 +1,62 @@
+HomePage = "//a[contains(text(), 'Home')]"
+MyPage = "//a[contains(text(),'My Page')]"
+Awards = "//a[contains(text(),'Awards')]"
+Trending = "//a[contains(text(),'Trending')]"
+Employees = "//a[contains(text(),'Employees')]"
+Patients = "//a[contains(text(),'Patients')]"
+Ambassadors = "//a[contains(text(),'Ambassadors')]"
+Data = "//a[contains(@href,'data')]"
+#//*[@id="navigation"]/ul/li[8]/a/text()
+#a[contains(text(),'Data')]"
+Comments = "//a[contains(text(),'Comments')]"
+Perks = "//a[contains(text(),'Perks')]"
+Reviews = "//a[contains(text(),'Reviews')]"
+Weekly = "//a[contains(text(), 'Weekly')]"
+Monthly = "//a[contains(text(),'Monthly')]"
+Quarterly = "//a[contains(text(), 'Quarterly')]"
+Yearly = "//a[contains(text(), 'Yearly')]"
+Week1 = "//div[@class='line-chart']/*[name()='svg']/*[name()='g']//*[contains(@class,'tick zero')]"
+Week2 = "//div[@class='line-chart']/*[name()='svg']/*[name()='g']//*[@class='tick'][1]"
+Week3 = "//div[@class='line-chart']/*[name()='svg']/*[name()='g']//*[@class='tick'][2]"
+Week4 = "//div[@class='line-chart']/*[name()='svg']/*[name()='g']//*[@class='tick'][3]"
+Week5 = "//div[@class='line-chart']/*[name()='svg']/*[name()='g']//*[@class='tick'][4]"
+Week6 = "//div[@class='line-chart']/*[name()='svg']/*[name()='g']//*[@class='tick'][5]"
+Week7 = "//div[@class='line-chart']/*[name()='svg']/*[name()='g']//*[@class='tick'][6]"
+Increments = "//div[@class='line-chart']/*[name()='svg']/*[name()='g']//*[@class='nv-x nv-axis nvd3-svg']"
+Monthx1 = "//div[@class='line-chart']/*[name()='svg']/*[name()='g']//*[contains(@class,'tick zero')]"
+Monthx2 = "//div[@class='line-chart']/*[name()='svg']/*[name()='g']//*[@class='tick'][1]"
+Monthx3 = "//div[@class='line-chart']/*[name()='svg']/*[name()='g']//*[@class='tick'][2]"
+Monthx4 = "//div[@class='line-chart']/*[name()='svg']/*[name()='g']//*[@class='tick'][3]"
+Monthx5 = "//div[@class='line-chart']/*[name()='svg']/*[name()='g']//*[@class='tick'][4]"
+Monthx6 = "//div[@class='line-chart']/*[name()='svg']/*[name()='g']//*[@class='tick'][5]"
+Monthx7 = "//div[@class='line-chart']/*[name()='svg']/*[name()='g']//*[@class='tick'][6]"
+Monthx8 = "//div[@class='line-chart']/*[name()='svg']/*[name()='g']//*[@class='tick'][7]"
+Monthx9 = "//div[@class='line-chart']/*[name()='svg']/*[name()='g']//*[@class='tick'][8]"
+Monthx10 = "//div[@class='line-chart']/*[name()='svg']/*[name()='g']//*[@class='tick'][9]"
+Quarterx1 = "//div[@class='line-chart']/*[name()='svg']/*[name()='g']//*[contains(@class,'tick zero')]"
+Quarterx2 = "//div[@class='line-chart']/*[name()='svg']/*[name()='g']//*[@class='tick'][1]"
+Quarterx3 = "//div[@class='line-chart']/*[name()='svg']/*[name()='g']//*[@class='tick'][2]"
+Quarterx4 = "//div[@class='line-chart']/*[name()='svg']/*[name()='g']//*[@class='tick'][3]"
+Yearx1 = "//div[@class='line-chart']/*[name()='svg']/*[name()='g']//*[contains(@class,'tick zero')]"
+Yearx2 = "//div[@class='line-chart']/*[name()='svg']/*[name()='g']//*[@class='tick'][1]"
+Yearx3 = "//div[@class='line-chart']/*[name()='svg']/*[name()='g']//*[@class='tick'][2]"
+Yearx4 = "//div[@class='line-chart']/*[name()='svg']/*[name()='g']//*[@class='tick'][3]"
+Yearx5 = "//div[@class='line-chart']/*[name()='svg']/*[name()='g']//*[@class='tick'][4]"
+Yearx6 = "//div[@class='line-chart']/*[name()='svg']/*[name()='g']//*[@class='tick'][5]"
+DropdownButton = "//button[@class='btn dropdown-toggle btn-white btn-select-location']"
+DropdownArrow = "//span[@class='caret']"
+SelLoclabel = "//label[@class='col-xs-5 control-label font-white label-dropdow']"
+lineIcon = "//div[@class='lines']"
+Profile = "//li[@id='menu-list']"
+Notifications = "//li[@id='notifications']"
+Homeicon = "//i[@class='icon-home']"
+
+
+
+
+
+
+
+
+
+

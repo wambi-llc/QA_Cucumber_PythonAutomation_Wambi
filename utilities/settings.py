@@ -3,6 +3,7 @@ import json
 
 settings = None
 
+
 class Settings(object):
     """Simple singleton class for managing and accessing settings"""
     def __init__(self):
