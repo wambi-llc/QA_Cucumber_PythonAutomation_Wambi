@@ -39,5 +39,5 @@ Feature: Patient Portal Regression
     Then I validate expected questions are displayed in Spanish throughout review process
     And I validate language on the Carepostcard and Daisy Award sections
 
-  Scenario: Smoke Test Demo
-    * Full Demo Step
+#  Scenario: Smoke Test Demo
+#    * Full Demo Step

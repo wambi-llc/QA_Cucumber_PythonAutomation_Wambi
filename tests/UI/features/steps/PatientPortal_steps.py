@@ -173,10 +173,11 @@ def step_impl(context):
     driver.waitOnElement(nextReview)
     driver.elementClick(nextReview)
     driver.waitOnElement(openMenu)
+    time.sleep(1) #wait_until_clickable method would be great
     driver.elementClick(openMenu)
-    driver.waitOnElement(signOut)
-    driver.elementClick(signOut)
     time.sleep(2)
+    driver.driver.find_element_by_xpath('/html/body/div/main/header/div/div[2]/div/div/a[3]').click()
+    time.sleep(1)
 
 @step("I will be able to skip the Carepostcard and Daisy Award sections")
 def step_impl(context):
@@ -189,7 +190,8 @@ def step_impl(context):
     driver.waitOnElement(nextReview)
     driver.elementClick(nextReview)
     driver.waitOnElement(openMenu)
+    time.sleep(1)  # wait_until_clickable method would be great
     driver.elementClick(openMenu)
-    driver.waitOnElement(signOut)
-    driver.elementClick(signOut)
     time.sleep(2)
+    driver.driver.find_element_by_xpath('/html/body/div/main/header/div/div[2]/div/div/a[3]').click()
+    time.sleep(1)

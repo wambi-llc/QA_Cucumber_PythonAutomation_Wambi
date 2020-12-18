@@ -159,4 +159,9 @@ def step_impl(context):
     #end of review
     driver.waitOnElement(nextReview)
     driver.elementClick(nextReview)
+    driver.waitOnElement(openMenu)
+    time.sleep(1)  # wait_until_clickable method would be great
+    driver.elementClick(openMenu)
     time.sleep(2)
+    driver.driver.find_element_by_xpath('/html/body/div/main/header/div/div[2]/div/div/a[3]').click()
+    time.sleep(1)

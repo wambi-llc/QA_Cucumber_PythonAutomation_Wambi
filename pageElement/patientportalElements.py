@@ -32,7 +32,7 @@ beginReview = "//button[@id='employee-modal-begin-review-btn']"
 openMenu = "//button[@id='menu-btn']"
 closeMenu = "//button[@id='side-bar-close-btn']"
 locationTile = "//div[@id='location-tile']"
-signOut = "//button[@id=sign-out-btn']"
+signOut = "//a[@id=sign-out-btn']"
 languageSelect = "//div[@class='LanguageSelector__StyledContainer-sc-1ig6tju-0 boxWNj']"
 sideLanguage = "//div[@class='LanguageSelector__StyledContainer-sc-1ig6tju-0 fYDxlP']"
 
