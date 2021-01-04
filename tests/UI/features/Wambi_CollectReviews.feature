@@ -2,7 +2,7 @@
 Feature: Collect Reviews
   # Enter feature description here
 
-  @WP-1208 -01
+  @WP-1208-01
   Scenario: Navigate to My Only Portal
     Given Navigate to https://dev-w4.wambiapp.com/auth/login
     And I enter username and password and click Login to login as Admin User
@@ -16,8 +16,8 @@ Feature: Collect Reviews
     When Attempt to access wambi app
     Then User should not be able to   access the Wambi app without reauthetcating
 
-#
-    @WP-1208 -02
+
+    @WP-1208-02
   Scenario: Navigate to One of Portals
     Given I am a leader
     And I have permissions to collect reviews for team members
