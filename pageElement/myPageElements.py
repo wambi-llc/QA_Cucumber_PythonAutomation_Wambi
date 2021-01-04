@@ -3,4 +3,7 @@ Selrecptfld = "//input[@class='select2-search__field']"
 selectOccassion = "//span[contains(text(),'Select Occasion')]"
 writeMessage = "//textarea[@id='content']"
 textAreaElem = "textarea"
-
+searchRecipient = "//input[@class='select2-search__field']"
+reviewPostCard = "//button[contains(text(),'Review Carepostcard')]"
+sendPeerPostCard = "//button[contains(text(),'Send')]"
+clickYes = "//button[contains(text(),'Yes!')]"

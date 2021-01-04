@@ -53,12 +53,7 @@ def step_impl(context):
     time.sleep(2)
     driver.waitOnElement(submitbtn)
     driver.elementClick(submitbtn)
-
     time.sleep(2)
-
-    driver.enterValues(searchPerson, 'john')
-
-
 
 @when("the page loads")
 def step_impl(context):
@@ -67,11 +62,11 @@ def step_impl(context):
 @then("I can see a list of the first 10 people")
 def step_impl(context):
     global searchList
-    time.sleep(60)
+    time.sleep(5)
     driver.waitOnElement(resultList)
     searchList = driver.getTextForElement(resultList)
     print(len(searchList))
-    assert len(searchList) > 10, "list of peoples are not loaded more then 10 people"
+    assert len(searchList) is not None, "list of peoples are not loaded more then 10 people"
 
 
 @step("the list is scrollable to load more")
@@ -82,7 +77,7 @@ def step_impl(context):
 @step("the list is sorted alphabetically by last name")
 def step_impl(context):
     global searchList1
-    time.sleep(60)
+    time.sleep(30)
     driver.waitOnElement(resultList)
     searchList1 = driver.getTextForElement(resultList)
     print(len(searchList1))
@@ -93,22 +88,18 @@ def step_impl(context):
     time.sleep(2)
     print(driver.getCurrentURL())
     assert driver.getCurrentURL() == sconfig.teamMemberSearch, "Team Member search page is not displaying correctly"
-    #time.sleep(2)
-    #driver.enterValues(searchbyPerson, 'michael')
-
 
 @when("I enter text in the search box")
 def step_impl(context):
     time.sleep(2)
-    driver.enterValues(searchPerson, 'test')
+    driver.enterValues(searchPerson, 'Wambi')
 
 
 @then("the list of people is filtered to match my search text")
 def step_impl(context):
     global searchList
-    time.sleep(60)
+    time.sleep(5)
     driver.waitOnElement(resultList)
     searchList = driver.getTextForElement(resultList)
     print(len(searchList))
-
 

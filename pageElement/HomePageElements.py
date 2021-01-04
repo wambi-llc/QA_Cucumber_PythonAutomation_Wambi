@@ -6,8 +6,6 @@ Employees = "//a[contains(text(),'Employees')]"
 Patients = "//a[contains(text(),'Patients')]"
 Ambassadors = "//a[contains(text(),'Ambassadors')]"
 Data = "//a[contains(@href,'data')]"
-#//*[@id="navigation"]/ul/li[8]/a/text()
-#a[contains(text(),'Data')]"
 Comments = "//a[contains(text(),'Comments')]"
 Perks = "//a[contains(text(),'Perks')]"
 Reviews = "//a[contains(text(),'Reviews')]"
@@ -50,7 +48,7 @@ lineIcon = "//div[@class='lines']"
 Profile = "//li[@id='menu-list']"
 Notifications = "//li[@id='notifications']"
 Homeicon = "//i[@class='icon-home']"
-
+portaldevHomepage = "//div[@class='Container__StyledContainer-sc-14zpskb-0 gNWvRc location__StyledContainer-fjhoqp-0 Vrdrs']"
 
 
 

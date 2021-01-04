@@ -3,6 +3,12 @@ from pageElement.HomePageElements import *
 from pageElement.ReviewElements import *
 from pageElement.myPageElements import *
 from utilities.driverUtil import driver
+from pageElement.SelectConfirmationLocationPageElements import *
+from pageElement.changLocationPageElements import *
+from pageElement.confirmPersonBeginReviewPageElements import *
+from pageElement.reviewBackQuestionsPageElements import *
+from pageElement.ReviewCommentsContactMePageElements import *
+from pageElement.Prompt_NomintateNurseDaisyAwardPageElements import *
 import time
 import string
 import random
@@ -22,36 +28,50 @@ def step_impl(context):
 @step(
     "click submit, click on a person, press start review, and navigate through the review until I reach the comment page")
 def step_impl(context):
-    driver.waitOnElement(submitLocation)
-    driver.elementClick(submitLocation)
     time.sleep(2)
-    driver.waitOnElement(personProfile)
-    driver.elementClick(personProfile)
+    driver.waitOnElement(previewLocation)
+    driver.elementClick(previewLocation)
     time.sleep(2)
-    driver.waitOnElement(beginReview)
-    driver.elementClick(beginReview)
+    driver.waitOnElement(NEXT)
+    driver.elementClick(NEXT)
     time.sleep(2)
-    driver.waitOnElement(surveyAnswers)
-    driver.elementClick(surveyAnswers)
+    driver.enterValues(searchPerson, 'Wambi Super Admin Edna')
     time.sleep(2)
-    driver.waitOnElement(surveyAnswers2)
-    driver.elementClick(surveyAnswers2)
+
     time.sleep(2)
-    driver.waitOnElement(surveyAnswers3)
-    driver.elementClick(surveyAnswers3)
+    driver.waitOnElement(selectNurse)
+    driver.elementClick(selectNurse)
     time.sleep(2)
-    driver.waitOnElement(surveyAnswers4)
-    driver.elementClick(surveyAnswers4)
+    driver.waitOnElement(clickClinic)
+    driver.elementClick(clickClinic)
+
     time.sleep(2)
-    driver.waitOnElement(surveyAnswers5)
-    driver.elementClick(surveyAnswers5)
+    driver.waitOnElement(selectClinic)
+    driver.elementClick(selectClinic)
     time.sleep(2)
+    driver.waitOnElement(chkTerms)
+    driver.elementClick(chkTerms)
+    time.sleep(2)
+    driver.pressTab()
+    time.sleep(2)
+    driver.pressEnter()
+    time.sleep(2)
+    driver.elementClick(question1)
+    time.sleep(2)
+    driver.elementClick(question1)
+    time.sleep(2)
+    driver.elementClick(question1)
+    time.sleep(2)
+    driver.elementClick(question1)
+    time.sleep(2)
+    driver.elementClick(question1)
+
 
 @then("in the comment bubble I add a random text and validate the spellcheck error line show after pressing space")
 def step_impl(context):
 
     Text = ''.join(random.choice(string.ascii_letters) for i in range(10))
-    driver.waitOnElement(commentBubbleSection)
-    driver.enterValues(commentBubbleSection, Text)
+    driver.waitOnElement(enterComments)
+    driver.enterValues(enterComments, Text)
     assert driver.tagAttributes(textAreaElem, 'spellcheck') == "true", "spell check is not highlighted as  "
 

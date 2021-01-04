@@ -36,3 +36,35 @@ def step_impl(context):
     driver.enterValues(writeMessage,Text)
     assert driver.tagAttributes(textAreaElem,'spellcheck') == "true","spell check is not highlighted as  "
 
+
+@step("fill out a Carepostcard to another employee")
+def step_impl(context):
+    time.sleep(2)
+    driver.enterValues(searchRecipient,'test')
+    time.sleep(5)
+    driver.pressEnter()
+    time.sleep(2)
+    driver.waitOnElement(selectOccassion)
+    driver.elementClick(selectOccassion)
+    time.sleep(5)
+    driver.pressEnter()
+    time.sleep(2)
+    Text = ''.join(random.choice(string.ascii_letters) for i in range(10))
+    driver.waitOnElement(writeMessage)
+    driver.enterValues(writeMessage, Text)
+    time.sleep(2)
+
+
+@then("the review Carepostcard screen will pop up")
+def step_impl(context):
+    driver.waitOnElement(reviewPostCard)
+    driver.elementClick(reviewPostCard)
+
+@step("I can send the Carepostcard")
+def step_impl(context):
+    time.sleep(2)
+    driver.waitOnElement(sendPeerPostCard)
+    driver.elementClick(sendPeerPostCard)
+    time.sleep(5)
+    driver.pressEnter()
+    #driver.elementClick(clickYes)

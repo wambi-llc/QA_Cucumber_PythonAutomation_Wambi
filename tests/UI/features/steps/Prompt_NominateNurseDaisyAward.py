@@ -20,9 +20,17 @@ def step_impl(context):
     driver.waitOnElement(selectNurse)
     driver.elementClick(selectNurse)
     time.sleep(2)
+    driver.waitOnElement(clickClinic)
+    driver.elementClick(clickClinic)
 
-    driver.waitOnElement(beginReview)
-    driver.elementClick(beginReview)
+    time.sleep(2)
+    driver.waitOnElement(selectClinic)
+    driver.elementClick(selectClinic)
+    time.sleep(2)
+
+    driver.pressTab()
+    time.sleep(2)
+    driver.pressEnter()
     time.sleep(2)
     driver.elementClick(question1)
     time.sleep(2)
@@ -78,6 +86,13 @@ def step_impl(context):
     time.sleep(2)
     driver.waitOnElement(lName)
     driver.enterValues(lName,'test')
+    time.sleep(2)
+    driver.waitOnElement(enterPhone)
+    driver.enterValues(enterPhone,'1234567890')
+    time.sleep(2)
+    driver.waitOnElement(enterText)
+    driver.enterValues(enterText,'textarea')
+
 
 
 
@@ -140,7 +155,7 @@ def step_impl(context):
     driver.elementClick(submitbtn)
     time.sleep(2)
 
-    driver.enterValues(searchPerson,'Ama T')
-    time.sleep(90)
+    driver.enterValues(searchPerson,'Wambi')
+    time.sleep(5)
     #driver.pressEnter()
     #time.sleep(5)

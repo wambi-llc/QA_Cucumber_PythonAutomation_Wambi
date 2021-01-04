@@ -13,8 +13,10 @@ Feature: Start A Review Search
 
   @WP-529
   Scenario: Enter text to search
-    Given I login to patient portal user
+    Given I am a patient portal user
+    And I have selected a location Or been sent directly to this page from the chatbot
     And I am on the search for person screen
+    When I enter text in the search box
     Then the list of people is filtered to match my search text
     Then I signout from PortalUser
 

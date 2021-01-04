@@ -83,18 +83,20 @@ def step_impl(context):
 @step("I can tap to change my location")
 def step_impl(context):
     assert "CHANGE LOCATION" in hamBurgerMenu[counter].text, "Unable to tap the CHANGE LOCATION"
-    print(hamBurgerMenu[0].text)
+    #print(hamBurgerMenu[0].text)
     time.sleep(2)
     driver.waitOnElement(changeLocation)
     driver.elementClick(changeLocation)
     time.sleep(2)
+    changeLoc = driver.getTextForElement(changedLocationTo)
     driver.waitOnElement(changedLocationTo)
     driver.elementClick(changedLocationTo)
     time.sleep(2)
     driver.waitOnElement(NEXT)
     driver.elementClick(NEXT)
-    print(driver.getTextForElement(changedLocationTo))
-    assert driver.getTextForElement(changedLocationTo) == 'UHA Healthcare' ,"Changed Location is not displaying correctly"
+    time.sleep(2)
+    print(changeLoc)
+    assert changeLoc == 'UHA Healthcare',"Changed Location is not displaying correctly"
 
 
 @step("have selected my location")
@@ -150,7 +152,7 @@ def step_impl(context):
     time.sleep(2)
     driver.waitOnElement(portalMenu)
     driver.elementClick(portalMenu)
-    time.sleep(2)
+    time.sleep(4)
     driver.waitOnElement(signOut)
     driver.elementClick(signOut)
     driver.clear_cookies()
