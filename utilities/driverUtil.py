@@ -86,9 +86,6 @@ class Driver(object):
         return self.driver.find_element_by_xpath(elemXpath).send_keys(value)
 
 
-
-
-
     def getTextForElement(self, element):
         return self.driver.find_element_by_xpath(element).text
 
@@ -142,6 +139,9 @@ class Driver(object):
 
     def getElementsbytag(self,tagvalue):
         return self.driver.find_element_by_tag_name(tagvalue)
+
+    def getElementbyvalue(self,elemXpath):
+        return self.driver.find_element_by_xpath(elemXpath).get_attribute('value')
 
 
 

@@ -1,4 +1,4 @@
-selectPerson = "//span[contains(text(),'Brittany J')]"
+selectPerson = "//span[contains(text(),'Brittany Beck')]"
 checkModalbox = "//div[@class='EmployeeTile__ProfileContainer-sc-1fp5azx-0 bqlAeO']"
 rating1 = "//span[contains(text(),'Poor')]"
 searchPerson = "//input[@placeholder='Search by name']"

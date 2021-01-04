@@ -7,6 +7,7 @@ import requests
 import json
 import time
 import os
+
 use_step_matcher("re")
 
 
@@ -15,7 +16,7 @@ use_step_matcher("re")
 def step_impl(context):
     driver.clear_cookies()
     driver.navigate(sconfig.patientPortalURL)
-    time.sleep(2)
+    time.sleep(5)
     driver.waitOnElement(startReview)
     driver.elementClick(startReview)
     time.sleep(4)
@@ -24,7 +25,6 @@ def step_impl(context):
 
 @step("have searched for a location Or scrolled to find my desired location")
 def step_impl(context):
-    #driver.clearElement(searchLoc)
     driver.waitOnElement(previewLocation)
     #driver.elementClick(previewLocation)
     time.sleep(2)

@@ -8,7 +8,7 @@ Feature: Home Tab
     Then I click on Home Tab
     Then I validate at the bottom of the chart I see all 4 options (Weekly, Monthly, Quarterly, Yearly)
 
-
+  @WP-1134
   Scenario: Validate Weekly Option shows time on X Axis in Weekly increments
     Given I navigate to Wambi Application
       And I click on Team Member Login
@@ -16,7 +16,7 @@ Feature: Home Tab
       Then I click on Home Tab
       And I click on Weekly option at the bottom of the home chart
       Then I validate at the bottom of the chart I see the time on X Axis in Weekly increments
-
+  @WP-1135
   Scenario: Validate Monthly Option shows time on X Axis in Weekly increments
     Given I navigate to Wambi Application
     And I click on Team Member Login
@@ -25,7 +25,7 @@ Feature: Home Tab
     And I click on Monthly option at the bottom of the home chart
     Then I validate at the bottom of the chart I see the time on X Axis in Monthly increments
     Then I also validate the months are incrementing by 1 month at a time
-
+  @WP-1152
   Scenario: Validate Quarterly Option shows time on X Axis in Weekly increments
     Given I navigate to Wambi Application
     And I click on Team Member Login
@@ -34,7 +34,7 @@ Feature: Home Tab
     And I click on Quarterly option at the bottom of the home chart
     Then I validate at the bottom of the chart I see the time on X Axis in Quarterly increments
     Then I also validate the quarters are incrementing by 1 quarter at a time.
-
+  @WP-1153
   Scenario: Validate Yearly Option shows time on X Axis in Weekly increments
     Given I navigate to Wambi Application
     And I click on Team Member Login

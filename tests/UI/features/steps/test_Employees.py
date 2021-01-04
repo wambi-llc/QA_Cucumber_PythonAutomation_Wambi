@@ -1,19 +1,12 @@
 from behave import *
 from pageElement.loginPageElements import *
 from pageElement.employeesElements import *
-from selenium.webdriver.support.select import *
 import utilities.config as sconfig
-from selenium.webdriver import *
-from allure_behave import *
-from allure_pytest import *
 import string
 import random
 import time
 import os
 import glob
-import sys
-import allure
-import pytest
 from utilities.driverUtil import driver
 use_step_matcher("re")
 empId = 0

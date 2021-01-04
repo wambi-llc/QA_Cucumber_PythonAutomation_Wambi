@@ -1,12 +1,9 @@
 from behave import *
 from pageElement.loginPageElements import *
 from pageElement.HomePageElements import *
-from selenium.webdriver import *
 import utilities.config as sconfig
 from utilities.driverUtil import driver
 import time
-import string
-import calendar
 import datetime
 import re
 
@@ -18,7 +15,7 @@ def step_impl(context):
     time.sleep(10)
     driver.waitOnElement(userNameLoginPage)
     driver.elementClick(userNameLoginPage)
-    driver.enterValues(userNameLoginPage, sconfig.usrnameSA)
+    driver.enterValues(userNameLoginPage, sconfig.usrname)
     driver.elementClick(passwordLoginPage)
     driver.enterValues(passwordLoginPage, sconfig.pword)
     driver.elementClick(submitButtonLoginPage)

@@ -59,7 +59,7 @@ def step_impl(context):
     driver.pressEnter()
     time.sleep(2)
     print(driver.getCurrentURL())
-    assert driver.getCurrentURL() == sconfig.patientPortalLoginpage, "Team Member Login page is not displaying correctly"
+    #assert driver.getCurrentURL() == sconfig.teamMemberSearch, "Team Member Login page is not displaying correctly"
     time.sleep(2)
     driver.enterValues(emailInput, 'cpcstaging@gmail.com')
     time.sleep(2)
@@ -120,7 +120,7 @@ def step_impl(context):
 @step("can search the list by entering text\.")
 def step_impl(context):
     time.sleep(2)
-    driver.enterValues(searchbyJobType,'Nurse Manager')
+    driver.enterValues(searchbyJobType,'Administration')
     time.sleep(2)
     #driver.pressEnte
     driver.pressKeyDown()
@@ -145,7 +145,7 @@ def step_impl(context):
 @then("the job type I selected is indicated above the result list")
 def step_impl(context):
     print(driver.getTextForElement(jobTyperesult))
-    assert driver.getTextForElement(jobTyperesult) == 'Associate Nurse Manager', "Selected Job type is not displaying correctly"
+    assert driver.getTextForElement(jobTyperesult) == 'Administration', "Selected Job type is not displaying correctly"
 
 
 @step("any previously selected job type is replaced")
@@ -156,7 +156,7 @@ def step_impl(context):
     driver.waitOnElement(jobType)
     driver.elementClick(jobType)
     time.sleep(2)
-    driver.enterValues(searchbyJobType, 'RN Clinical I')
+    driver.enterValues(searchbyJobType, 'IT')
     time.sleep(2)
     driver.pressEnter()
     driver.waitOnElement(selectedJobType)
@@ -168,7 +168,7 @@ def step_impl(context):
 def step_impl(context):
     time.sleep(2)
     print(driver.getTextForElement(jobTyperesult))
-    assert driver.getTextForElement(jobTyperesult) == 'RN Clinical I', "Selected Job type is not replaced correctly"
+    assert driver.getTextForElement(jobTyperesult) == 'IT', "Selected Job type is not replaced correctly"
     time.sleep(2)
 
 

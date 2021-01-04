@@ -2,24 +2,6 @@
 Feature: Start a review - Location Test Scripts
   All Test Cases related to selecting updating/changing locations.
 
-  @WP-524
-  Scenario: Open Hamburger Menu to View Location
-    Given I am a patient portal user
-    And have selected my location and have authenticated
-    When I tap the Hamburger menu
-    Then a menu opens up
-    And I can see my current selected location
-    And I can tap to change my location
-    Then I signout from PortalUser
-
-  @WP-524
-  Scenario: Change Location
-    Given I am a patient portal user
-    And have selected my location
-    When I tap to change my location
-    Then I am taken to the Location Search page
-    And can change my location without re-authenticating
-
   @WP-523
   Scenario: Validate Select Location to Preview
     Given I am a patient portal user
@@ -51,3 +33,21 @@ Feature: Start a review - Location Test Scripts
     And I previewed a location
     When I click the Next button
     Then I am taken to the Team member search
+
+    @WP-524
+  Scenario: Open Hamburger Menu to View Location
+    Given I am a patient portal user
+    And have selected my location and have authenticated
+    When I tap the Hamburger menu
+    Then a menu opens up
+    And I can see my current selected location
+    And I can tap to change my location
+    Then I signout from PortalUser
+
+  @WP-524
+  Scenario: Change Location
+    Given I am a patient portal user
+    And have selected my location
+    When I tap to change my location
+    Then I am taken to the Location Search page
+    And can change my location without re-authenticating

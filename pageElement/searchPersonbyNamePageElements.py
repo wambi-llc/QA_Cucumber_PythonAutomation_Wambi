@@ -1,1 +1,1 @@
-resultList = "//ul[@class='SearchPerson__StyledUl-sc-2pwtdo-4 kUPrGN']"
+resultList = "//ul[@class='SearchEmployee__StyledUl-sc-1k8gk9z-4 OHXXJ']"

@@ -1,4 +1,4 @@
-startReview = "//button[@class='Button__StyledButton-xy5qsc-0 dwPatn']"
+startReview = "//button[@id='start-review-btn']"
 searchLoc = "//input[@placeholder='Search location by name or city...']"
 locationTile = "//span[text()='Arbor Longterm Care']"
 confBox = "//div[@class='Modal__StyledModal-gqoqg8-1 kyiZBG']"
