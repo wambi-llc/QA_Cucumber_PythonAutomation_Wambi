@@ -1,5 +1,6 @@
 from behave import *
 from pageElement.patientportalElements import *
+from pageElement.wambiplatformElements import *
 import utilities.config as sconfig
 from utilities.driverUtil import driver
 from random import randint
